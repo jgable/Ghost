@@ -583,9 +583,11 @@ var path           = require('path'),
                             'bower_components/codemirror/mode/markdown/markdown.js',
                             'bower_components/codemirror/mode/gfm/gfm.js',
                             'bower_components/showdown/src/showdown.js',
+                            'bower_components/validator-js/validator.js',
                             'core/clientold/assets/lib/showdown/extensions/ghostdown.js',
                             'core/shared/lib/showdown/extensions/typography.js',
                             'core/shared/lib/showdown/extensions/github.js',
+
 
                             'bower_components/moment/moment.js'
                         ]
