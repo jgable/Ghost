@@ -1,0 +1,13 @@
+<section class="modal-content">
+    {{#if title}}<header class="modal-header"><h1>{{title}}</h1></header>{{/if}}
+    {{#if closable}}<a class="close" href="#" title="Close"><span class="hidden">Close</span></a>{{/if}}
+    <section class="modal-body">
+        {{yield}}
+    </section>
+    {{#if confirm}}
+    <footer class="modal-footer">
+        <button class="js-button-accept button-add" {{action "accept"}}>{{confirm.acceptText}}{{#unless confirm.acceptText}}Accept{{/unless}}</button>
+        <button class="js-button-reject button-delete" {{action "reject"}}>{{confirm.rejectText}}{{#unless confirm.rejectText}}Reject{{/unless}}</button>
+    </footer>
+    {{/if}}
+</section>
